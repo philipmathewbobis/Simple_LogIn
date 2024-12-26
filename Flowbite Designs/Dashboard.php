@@ -5,7 +5,7 @@
 <?php
     if (!isset($_SESSION["user_id"]) && !isset($_SESSION["username"]) && !isset($_SESSION["name"]) ){
         // Redirect to Login page if session is not set
-        header("Location:http://localhost:8000/Flowbite%20Designs/login.php");
+        header("Location:../Flowbite%20Designs/login.php");
         exit();
     }else if (isset($_SERVER["REMOTE_ADDR"])){ 
       if ($_SESSION["user_ip"] !== $_SERVER["REMOTE_ADDR"] || $_SESSION["user_agent"] !== $_SERVER["HTTP_USER_AGENT"]){
